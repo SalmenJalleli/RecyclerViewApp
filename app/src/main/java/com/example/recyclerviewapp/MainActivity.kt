@@ -4,7 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.recyclerviewapp.databinding.ActivityMainBinding
-
+//comment
 class MainActivity : AppCompatActivity() {
     private lateinit var binding : ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,7 +22,8 @@ class MainActivity : AppCompatActivity() {
             Todo("call daddy",true),
             Todo("attend german course",false),
             Todo("Donate for charity",true),
-            Todo("Go to the gym",true))
+            Todo("Go to the gym",true),
+            Todo("Work on MVVM app",true))
         val adapter = TodoAdapter(todoList)
         binding.rvTodos.adapter=adapter
         binding.rvTodos.layoutManager = LinearLayoutManager(this)
